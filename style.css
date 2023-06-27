@@ -1,0 +1,135 @@
+body {
+    height: 100%;
+    background-color: lightblue;
+    padding: 0;
+    margin:0;
+}
+
+div#opening {
+    top:0;
+    margin:0;
+    height: 100vh;
+    text-align: center;
+    display: table;
+    width: 100%;
+    background-color: black;
+    opacity: 1;
+}
+
+#opening h1 {
+    display:table-cell;
+    margin: auto;
+    vertical-align: middle;
+    color: white;
+    font-size: 100px;
+}
+
+
+section {
+    height: 500px;
+    width:100%;
+}
+section#name { 
+    position: absolute;
+    top: 50vh;
+    left:0;
+    display: table;
+    text-align: center;
+    
+}
+#name {
+    z-index: -1;
+    opacity: 0;
+    text-align: center;
+}
+
+#name h2 {
+    text-align: center;
+    display:table-cell;
+    margin: auto;
+    vertical-align: middle;
+    color: black;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+/*Navigation*/
+nav {
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    transition: top 0.3s;
+    z-index: 1;
+    height:30px;
+    box-shadow: rgba(100, 100, 100, 0.4) 0px 2px 4px, rgba(100, 100, 100, 0.3) 0px 7px 13px -3px, rgba(100, 100, 100, 0.2) 0px -3px 0px inset;
+}
+
+nav.hover {
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: -40px;
+    transition: top 0.3s;
+    z-index: 1;
+    height:30px;
+    box-shadow: rgba(100, 100, 100, 0.4) 0px 2px 4px, rgba(100, 100, 100, 0.3) 0px 7px 13px -3px, rgba(100, 100, 100, 0.2) 0px -3px 0px inset;
+}
+nav.hover:hover {
+    top:0px;
+    padding: 10px;
+    
+}
+  
+/*Navigation Links*/
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+    text-align: center;
+}
+  
+
+nav ul {
+    margin:0;
+    display:flex;
+}
+
+.nav_item {
+    list-style: none;
+    padding:5px 10px;
+    margin:0;
+}
+
+.nav_item a {
+    margin:0;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav_item div {
+    height: 5px;
+    background-color: black;
+    width: 5px;
+    margin: auto;
+    border-radius: 40px;
+    /* transition-property: width, background-color; */
+    transition-delay: background-color 1s;
+    transition-duration: 0.5s;
+}
+.nav_item #active_page {
+    background-color: white;
+}
+
+
+.hovered div {
+    background-color: white;
+    width: 35px;
+}

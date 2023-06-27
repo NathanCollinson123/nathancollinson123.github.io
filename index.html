@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Home - Nathan Collinson</title>
+    </head>
+    <body>
+        <header>
+        </header>
+        <nav class="hover">
+            <ul>
+                <li class="nav_item">
+                    <a href="index.html">Home</a>
+                    <div id="active_page"></div>
+                </li>
+                <li class="nav_item">
+                    <a href="aboutme.html">About Me</a>
+                    <div></div>
+                </li>
+            </ul>
+        </nav>
+        <div id="opening">
+            <h1>Welcome</h1>
+        </div>
+        
+        <section id="name">
+            <h2>Hello</h2>
+        </section>
+        <section class="content">
+            <p>asdfasdf</p>
+        </section>
+        <section class="content">
+            <p>asdfasdf</p>
+        </section>
+        <section class="content">
+            <p>asdfasdf</p>
+        </section>
+    </body>
+    <script>
+        var openingOpacity = 1;
+        var colours = ["black", "orange", "#301934", "#023020", "#36454F", "#191970", "#400000"];
+        $("#opening").css("background-color", colours[(Math.round(Math.random() * colours.length-1))]);
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                openingOpacity = 1 - $(window).scrollTop() / ($('#opening').height() / 2);
+
+                $("#opening").css("opacity", openingOpacity);
+                if(openingOpacity <= 0){
+                $("#opening").css("background-color", colours[(Math.round(Math.random() * colours.length-1))]);
+                }
+
+                $("#name").css("opacity", -1 + $(window).scrollTop() / ($('#opening').height() / 4));
+
+                $(".content").text($(window).scrollTop());
+                if($(window).scrollTop() > $("#opening").height()){
+                    $("nav").removeClass("hover");
+                }
+                else{
+                    $("nav").addClass("hover");
+                } 
+            });
+            /*Navigation*/
+            $(".nav_item").hover(function(){
+                $(this).addClass("hovered");
+            }, function() {
+                $(this).removeClass("hovered");
+            });
+        });  
+    </script>
+</html>

@@ -1,0 +1,1 @@
+document.getElementById("opening").style.color = "#fff000";
