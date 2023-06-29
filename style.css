@@ -1,6 +1,6 @@
 body {
     height: 100%;
-    background-color: lightblue;
+    background-color: #36454F;
     padding: 0;
     margin:0;
 }
@@ -132,4 +132,22 @@ nav ul {
 .hovered div {
     background-color: white;
     width: 35px;
+}
+
+
+/* CONTACTS PAGE */
+
+#contacts_box {
+    background-color: white;
+    margin:auto;
+    width:40%; 
+    height:40%;
+    border: 5px solid;
+    border-radius: 15px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left:30%;
+    box-shadow: rgba(100, 100, 100, 0.4) 0px 2px 4px, rgba(100, 100, 100, 0.3) 0px 7px 13px -3px, rgba(100, 100, 100, 0.2) 0px -3px 0px inset;
 }
