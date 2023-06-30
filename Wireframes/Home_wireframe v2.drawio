@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-30T00:29:58.567Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="1Ng1zYLa5aqPpd7gATEh" version="21.5.2" type="device">
+<mxfile host="app.diagrams.net" modified="2023-06-30T00:46:22.853Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="BmeL86GCBjpfxxENAhyK" version="21.5.2" type="device">
   <diagram name="Page-1" id="03018318-947c-dd8e-b7a3-06fadd420f32">
     <mxGraphModel dx="1434" dy="1638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -106,6 +106,30 @@
         </mxCell>
         <mxCell id="A9MweNwRuXymAeLTpPh3-105" value="" style="triangle;whiteSpace=wrap;html=1;rotation=0;" parent="1" vertex="1">
           <mxGeometry x="840" y="1120" width="20" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IqRww1W9wy2g7gaqo5fh-2" value="selected project moves upward transition and shows by fading to white when hovered&amp;nbsp;&lt;br&gt;fully white when at the selected area" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="100" y="970" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="IqRww1W9wy2g7gaqo5fh-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.445;entryY=0.982;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="A9MweNwRuXymAeLTpPh3-92">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="970" as="sourcePoint" />
+            <mxPoint x="280" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IqRww1W9wy2g7gaqo5fh-4" value="slideshow and text will fade in and out depending on what project is selected" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1180" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="IqRww1W9wy2g7gaqo5fh-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.667;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="A9MweNwRuXymAeLTpPh3-102">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="1250" as="sourcePoint" />
+            <mxPoint x="310" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IqRww1W9wy2g7gaqo5fh-6" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="A9MweNwRuXymAeLTpPh3-98">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="1250" as="sourcePoint" />
+            <mxPoint x="310" y="1200" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
