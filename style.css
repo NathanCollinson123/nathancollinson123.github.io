@@ -1,3 +1,4 @@
+
 body {
     height: 100%;
     background-color: #36454F;
@@ -138,7 +139,6 @@ nav ul {
 /* CONTACTS PAGE */
 
 #contacts_box {
-    
     margin:auto;
     width:50%; 
     height:60%;
@@ -147,7 +147,6 @@ nav ul {
     top: 20%;
     /*transform: translate(0, 0%);*/
     left:25%;
-    
 }
 
 #contacts_box h2 {
@@ -172,7 +171,6 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-content: space-around;
     height: 100%;
 }
 
@@ -222,5 +220,51 @@ nav ul {
 
 ul {
     list-style-type: none;
-  }
+}
 
+
+/* Mobile Styling */
+@media only screen and (max-width: 980px){
+
+    /* Mobile Contacts Page */
+    #contacts_box {
+        height:70%;
+        top: 15%;
+    }
+
+    #contacts_box h2 {
+        font-size: 80px;
+    }
+
+    .contact {
+        width: 250px;
+        height: 100px;
+    }
+
+    .contact_info p {
+        font-size: xx-large;
+    }
+
+    /* Mobile navigation */
+    nav {
+        height:70px;
+    }
+
+    .nav_item div {
+        height: 15px;
+        width: 15px;
+    }
+
+    .nav_item a {
+        font-size: x-large;
+    }
+
+    nav ul {
+        padding-top: 10px;
+    }
+    nav.hover {
+        height: 70px;
+        top:0;
+    }
+
+}
