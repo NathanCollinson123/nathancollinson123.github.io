@@ -177,14 +177,13 @@ nav ul {
     border-color: white;
     border-top: 1px solid;
     height: 120px;
+    transition: 0.5s;
 }
 .contact a {
     text-decoration: none;
-    background-color: #3A3A3A;
-    outline: none;
-    transition: 0.3s;
     width: 100%;
     margin: auto;
+    background-color: #3A3A3A;
 }
 .contact a p {
     height: 120px;
@@ -192,8 +191,17 @@ nav ul {
     color: black;
     margin: 0;
     font-size: 40px;
-    display: table-cell;
     vertical-align: middle;
+    display: table-cell;
+    transition: 0.5s;
+}
+
+.contact:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.contact:hover a p {
+    padding-left: 50px;
 }
 
 @media (min-width: 1000px) {
