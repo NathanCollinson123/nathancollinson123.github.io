@@ -96,6 +96,7 @@ nav ul li a {
     margin: 0px 10px;
     text-align: center;
 }
+
   
 
 nav ul {
@@ -114,6 +115,13 @@ nav ul {
     text-decoration: none;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.nav_item a p {
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+    text-align: center;
 }
 
 .nav_item div {
