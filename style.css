@@ -25,32 +25,30 @@ div#opening {
     color: white;
     font-size: 100px;
 }
-
-
 section {
-    height: 500px;
-    width:100%;
+    width: 100%;
 }
+
 section#name { 
     position: absolute;
     top: 50vh;
     left:0;
     display: table;
-    text-align: center;
-    
+    height: 50vh;
 }
 #name {
     z-index: -1;
     opacity: 0;
-    text-align: center;
 }
 
 #name h2 {
-    text-align: center;
-    display:table-cell;
+    font-size:10em;
+    padding-left: 20px;
     margin: auto;
-    vertical-align: middle;
-    color: black;
+    color: #292929;
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 5%;
     user-select: none; /* supported by Chrome and Opera */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
@@ -58,6 +56,26 @@ section#name {
     -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
+.me {
+    padding-top:40px;
+    min-height: 500px;
+}
+.text {
+    margin:auto;
+    font-size: large;
+    max-width: 800px;
+}
+.text p {
+    display: none;
+}
+
+#image {
+    margin:auto;
+    width:552px;
+    height:736px;
+    border: 1px solid black;
+    display: none;
+}
 /*Navigation*/
 nav {
     background-color: black;
@@ -213,6 +231,10 @@ nav ul {
 }
 
 @media (min-width: 1000px) {
+    p {
+        font-size: 20px;
+    }
+
     .contact {
         height: 60px;
     }
@@ -220,6 +242,24 @@ nav ul {
     .contact a p {
         height: 60px;
         font-size: 20px;
+    }
+
+    img {
+        width:331px;
+        height:441px;
+    }
+
+    #image {
+        width:331px;
+        height:441px;
+        margin:none;
+        margin-right: 20%;
+        float:right;
+    }
+    .text {
+        margin-left: 20%;
+        font-size: large;
+        
     }
 }
 
@@ -249,5 +289,4 @@ nav ul {
         height: 70px;
         top:0;
     }
-    
 }

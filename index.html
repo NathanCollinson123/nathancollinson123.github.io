@@ -3,6 +3,9 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <title>Home - Nathan Collinson</title>
     </head>
     <body>
@@ -29,29 +32,37 @@
             <h2>About Me</h2>
         </section>
         <section class="me">
+            
+            <div id="image"><img src="imgs/profile.jpg" alt="Me" width="552", height="736"></div>
             <div class="text">
-                <p>Hi I'm Nathan. I am currently a 3rd year Software Engineering student studying at Victoria University of Wellington. 
+                <p id="first">Hi I'm Nathan. I am currently a 3rd year Software Engineering student studying at Victoria University of Wellington. 
                     I enjoy programming and have a passion for learning new things. I am currently looking for a summer internship in the software development industry.
                     In my free time I enjoy keeping fit by playing sports and going to the gym. I also enjoy playing games with friends, and customising keyboards.
                 </p>
-                <p>
+                <p id="second">
                     I enjoy creating cool things with code where I can apply my Software Engineering skills and can use critical thinking to solve real problems. 
                     A personal interest is in the use of using artificial intelligence as an enabler for making society better. I also enjoy developing websites and web applications.
                 </p>
-                <p>
+                <p id="third">
                     I have University experience doing Java, Python, C, C++, JavaScript, HTML, CSS, and SQL. I have also used frameworks such as React, Node.js, and Ionic.
                     I have also used tools such as Git and Docker, and methodologies such as Agile and DevOps.
                     Some of my projects can be found on my GitHub and GitLab. Feel free to ask questions about them.
                 </p>
             </div>
-            <img src="imgs/profile.jpg" alt="Me" width="331", height="441">
+            
         </section>
         <section class="content">
             <p>asdasdf</p>
         </section>
         <section class="content">
             <p>asdfasdf</p>
+            
         </section>
+        <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
     </body>
     <script>
         var openingOpacity = 1;
@@ -66,6 +77,18 @@
                 $("#opening").css("background-color", colours[(Math.round(Math.random() * colours.length-1))]);
                 }
 
+                if ($(this).scrollTop()<1){
+                    //$('#image').fadeOut(1000);
+                    //$('.text').hide(1000);
+                    $('#image').css("display", "none");
+                    $('.text p').css("display", "none");
+                }
+                if ($(this).scrollTop()>50) {
+                    $('#image').fadeIn(2000);
+                    $('#first').delay(2000).show(1000);
+                    $('#second').delay(3000).show(1000);
+                    $('#third').delay(4000).show(1000);
+                }
                 $("#name").css("opacity", -1 + $(window).scrollTop() / ($('#opening').height() / 4));
 
                 $(".content").text($(window).scrollTop());
