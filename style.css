@@ -75,6 +75,11 @@ section#name {
     height:736px;
     border: 1px solid black;
     display: none;
+    margin-left: 15px;
+}
+
+#first {
+    margin-top: 0;
 }
 /*Navigation*/
 nav {
@@ -253,11 +258,11 @@ nav ul {
         width:331px;
         height:441px;
         margin:none;
-        margin-right: 20%;
+        margin-right: 15%;
         float:right;
     }
     .text {
-        margin-left: 20%;
+        margin-left: 15%;
         font-size: large;
         
     }
