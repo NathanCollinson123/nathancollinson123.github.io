@@ -6,6 +6,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <script src="js/script.js"></script>
+        <script src="js/Project.js"></script>
         <title>Home - Nathan Collinson</title>
     </head>
     <body>
@@ -32,7 +34,6 @@
             <h2>About Me</h2>
         </section>
         <section class="me">
-            
             <div id="image"><img src="imgs/profile.jpg" alt="Me" width="552", height="736"></div>
             <div class="text">
                 <p id="first">Hi I'm Nathan. I am currently a 3rd year Software Engineering student studying at Victoria University of Wellington. 
@@ -50,18 +51,21 @@
                 </p>
             </div>
         </section>
-        <section class="content">
-            <p>asdasdf</p>
-        </section>
+        <section class="project">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <button id="nightCalc" class="project_button">Night Calc</button>
+                <button id="chapsChallenge" class="project_button">Chaps Challenge</button>
+            </div>
+            <div id="currentProject">
+                <h3 id="projectName"></h3>
+                <!--Here there would also be a slide show of images -->
+                <p id="projectDescription"></p>
+            </div>
         <section class="content">
             <p>asdfasdf</p>
             
         </section>
-        <p>asdfasdf</p>
-            <p>asdfasdf</p>
-            <p>asdfasdf</p>
-            <p>asdfasdf</p>
-            <p>asdfasdf</p>
     </body>
     <script>
         var openingOpacity = 1;
@@ -91,7 +95,7 @@
                 $("#name").css("opacity", -1 + $(window).scrollTop() / ($('#opening').height() / 4));
 
                 $(".content").text($(window).scrollTop());
-                if($(window).scrollTop() > $("#opening").height()){
+                if($(window).scrollTop() > ($("#opening").height())/2){
                     $("nav").removeClass("hover");
                 }
                 else{
