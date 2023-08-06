@@ -4,9 +4,10 @@
 
 window.addEventListener("load",init);
 function init(){
-    bindEvents();
+    initProjectController();
     loadProjects();
 }
+
 
 const projectSearch = {
     projects: [],
@@ -22,22 +23,53 @@ const projectSearch = {
     },
 };
 
-function loadProjects(){
-    projectSearch.projects.push(new Project("nightCalc","This is the asdf for nightCalc",["imgs/nightCalc"]));
-    projectSearch.projects.push(new Project("chapsChallenge","This is the description for chapsChallenge",["img/chapsChallenge.png"]));
+function initProjectController() {
+    bindEvents();
+}
+  
 
+function loadProjects() {
+    projectSearch.projects.push(
+      new Project("Night Calc", "nightCalc", "This is the description for nightCalc", ["imgs/nightCalc"])
+    );
+    projectSearch.projects.push(
+      new Project("Chaps Challenge", "chapsChallenge", "This is the description for Chaps Challenge", ["img/chapsChallenge.png"])
+    );
+  
+    initProjectController(); // Call the function to initialize event listeners
+}
+  
+
+function bindEvents() {
+    // Remove existing event listeners
+    document.querySelector("#nightCalc").removeEventListener("click", handleProjectClick);
+    document.querySelector("#chapsChallenge").removeEventListener("click", handleProjectClick);
+  
+    // Bind updated event listeners
+    document.querySelector("#nightCalc").addEventListener("click", handleProjectClick);
+    document.querySelector("#chapsChallenge").addEventListener("click", handleProjectClick);
 }
 
-function bindEvents(){
-    document.querySelector("#nightCalc").addEventListener("click",function() {
-        updateProject("nightCalc");
-    });
-    document.querySelector("#chapsChallenge").addEventListener("click",function() {
-        updateProject("chapsChallenge");
-    });
+function handleProjectClick(event) {
+    var projectKey = event.currentTarget.id;
+    var project = projectSearch.searchProject(projectKey)[0];
+  
+    document.getElementById("projectName").innerText = project.title;
+    document.getElementById("projectDescription").innerText = project.desc;
 }
 
-function updateProject(project){
-    document.getElementById("projectName").innerText = projectSearch.searchProject(project)[0].name;
-    document.getElementById("projectDescription").innerText  = projectSearch.searchProject(project)[0].desc;
+// Wrap your event listener code in a function
+function setupCarouselUpdatedEvent() {
+    var carousel = document.querySelector('.js-carousel');
+    if (carousel) {
+      carousel.addEventListener('carousel-updated', function(event) {
+        initProjectController();
+      });
+    }
 }
+
+  // Call the setupCarouselUpdatedEvent function when the document is ready
+document.addEventListener('DOMContentLoaded', function() {
+    setupCarouselUpdatedEvent();
+
+});

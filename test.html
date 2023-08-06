@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <script src="js/carousel.js"></script>
+        <title>Home - Nathan Collinson</title>
+    </head>
+    <body>
+        <div class="carousel cs3-flex cs3-flex-column js-carousel" data-drag="on">
+            <p class="cs3-sr-only">Carousel items</p>
+          
+            <div class="carousel__wrapper cs3-order-2 cs3-overflow-hidden">
+              <ol class="carousel__list">
+                <li class="carousel__item">
+                  <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">1</div>
+                </li>
+          
+                <li class="carousel__item">
+                  <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">2</div>
+                </li>
+          
+                <li class="carousel__item">
+                  <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">3</div>
+                </li>
+          
+                <li class="carousel__item">
+                  <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">4</div>
+                </li>
+          
+                <li class="carousel__item">
+                  <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">5</div>
+                </li>
+          
+                <li class="carousel__item">
+                  <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">6</div>
+                </li>
+          
+                <li class="carousel__item">
+                  <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">7</div>
+                </li>
+          
+                <li class="carousel__item">
+                  <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">8</div>
+                </li>
+          
+                <li class="carousel__item">
+                  <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">9</div>
+                </li>
+          
+                <li class="carousel__item">
+                  <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">10</div>
+                </li>
+          
+                <li class="carousel__item">
+                  <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">11</div>
+                </li>
+          
+                <li class="carousel__item">
+                  <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">12</div>
+                </li>
+              </ol>
+            </div>
+          
+            <nav class="cs3-margin-bottom-xs cs3-order-1 ">
+              <ul class="cs3-flex cs3-gap-3xs cs3-justify-end">
+                <li>
+                  <button class="carousel__control carousel__control--prev js-carousel__control js-tab-focus">
+                    <svg class="cs3-icon" viewBox="0 0 20 20">
+                      <title>Show previous items</title>
+                      <polyline points="13 2 5 10 13 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                    </svg>
+                  </button>
+                </li>
+          
+                <li>
+                  <button class="carousel__control carousel__control--next js-carousel__control js-tab-focus">
+                    <svg class="cs3-icon" viewBox="0 0 20 20">
+                      <title>Show next items</title>
+                      <polyline points="7 2 15 10 7 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          
+          </div>
+        <script src="js/carousel.js"></script>
+    </body>
+    <script>   
+        $(document).ready(function(){
+            $(".nav_item").hover(function(){
+                $(this).addClass("hovered");
+            }, function() {
+                $(this).removeClass("hovered");
+            });
+        });
+    </script>
+    
+</html>

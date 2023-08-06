@@ -1,5 +1,6 @@
 class Project{
-    constructor(name, desc, imgs){
+    constructor(title, name, desc, imgs){
+        this.title = title;
         this.name = name;
         this.desc = desc;
         this.imgs = imgs;
