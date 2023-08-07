@@ -56,57 +56,62 @@
             <h2>My Projects</h2>
             <p>I have worked on many different projects from Java games to React Webapps. Feel free to view them below by pressing on the buttons.</p>
             <div class="projects">
-                <div class="carousel cs3-flex cs3-flex-column js-carousel" data-drag="on">
+                
+                <div class="carousel cs3-flex cs3-flex-column js-carousel" data-drag="on" data-autoplay="on" data-loop="off">
                     <p class="cs3-sr-only">Carousel items</p>
                     
                     <div class="carousel__wrapper cs3-order-2 cs3-overflow-hidden">
-                        <ol class="carousel__list">
+                        
+                        <div id="side-fade-right"></div>
+                        <div id="side-fade-left"></div>
+                        <ol class="carousel__list" id="project-carousel">
+                        <!--
                         <li class="carousel__item">
-                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md"><button id="nightCalc" class="project_button">Night Calc</button></div>
+                            <div id ="nightCalc" class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md card"><p>Night Calc</p></div>
                         </li>
                     
                         <li class="carousel__item">
-                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md"><button id="chapsChallenge" class="project_button">Chaps Challenge</button></div>
+                            <div id="chapsChallenge" class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md card"><p>Chaps Challenge</p></div>
                         </li>
                     
                         <li class="carousel__item">
-                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">3</div>
+                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md card"><p>3</p></div>
                         </li>
                     
                         <li class="carousel__item">
-                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">4</div>
+                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md card"><p>4</p></div>
                         </li>
                     
                         <li class="carousel__item">
-                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">5</div>
+                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md card"><p>5</p></div>
                         </li>
                     
                         <li class="carousel__item">
-                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">6</div>
+                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md card"><p>6</p></div>
                         </li>
                     
                         <li class="carousel__item">
-                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">7</div>
+                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md card"><p>7</p></div>
                         </li>
                     
                         <li class="carousel__item">
-                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">8</div>
+                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md card"><p>8</p></div>
                         </li>
                     
                         <li class="carousel__item">
-                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">9</div>
+                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md card"><p>9</p></div>
                         </li>
                     
                         <li class="carousel__item">
-                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">10</div>
+                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md card"><p>10</p></div>
                         </li>
                     
                         <li class="carousel__item">
-                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">11</div>
-                        </li>
+                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md card"><p>11</p></div>
+                        </li>-->
                     
                         <li class="carousel__item">
-                            <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">12</div>
+                            <div id="filler" class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md card"></div>
                         </li>
                         </ol>
                     </div>

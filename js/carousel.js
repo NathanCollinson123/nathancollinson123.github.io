@@ -704,6 +704,7 @@
       justifyContent: false,
       alignControls: false,
       overflowItems: false
+      
     };
   
     window.Carousel = Carousel;

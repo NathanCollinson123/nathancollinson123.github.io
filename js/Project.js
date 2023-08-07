@@ -9,4 +9,8 @@ class Project{
     toggle(){
         this.isSelected = !this.isSelected;
     }
+
+    unSelect(){
+        this.isSelected = false;
+    }
 }

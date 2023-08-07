@@ -311,6 +311,49 @@ Descr: Display and cycle through a collection of items
 Usage: codyhouse.co/license
 
 -------------------------------- */
+
+.carousel__item .selected {
+    transform: scale(1.04);
+}
+
+.carousel__item .card {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.carousel__item .card:hover:not(#filler){
+    transform: scale(1.04);
+}
+
+#nightCalc {
+    background-image: url("imgs/night-calc/1.png");
+    background-size: cover;
+}
+
+.carousel__wrapper #side-fade-left {
+    position: absolute;
+    left: 0;
+    top: 50;
+    width: 15vw;
+    height: 300px;
+    margin:auto;
+    background: linear-gradient(to right, rgba(245,245,245,1) 25%,rgba(245,245,245,0) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.carousel__wrapper #side-fade-right {
+    position: absolute;
+    right: 0;
+    top: 50;
+    width: 15vw;
+    height: 300px;
+    margin:auto;
+    background: linear-gradient(to left, rgba(245,245,245,1) 25%,rgba(245,245,245,0) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
 * { 
     padding: 0;
 }
@@ -318,7 +361,17 @@ Usage: codyhouse.co/license
 ol, ul, menu {
     list-style: none;
 }
-  
+ 
+
+.card p {
+    background-color: #11111150;
+    padding:0.5em;
+    backdrop-filter: blur(5px);
+    color: white;
+    
+    border-radius: 4px;
+}
+
 /* variables */
 :root {
     /* colors */
@@ -367,14 +420,13 @@ ol, ul, menu {
   
 /* component */
 :root {
-    --carousel-grid-gap: var(--cs3-space-xs);
-    --carousel-item-auto-size: 260px;
+    --carousel-grid-gap: 1.2em;
+    --carousel-item-auto-size: 300px;
     --carousel-transition-duration: 0.5s;
 }
   
 .carousel {
     position: relative;
-    width: 80%;
     margin: auto;
 }
   
@@ -559,7 +611,7 @@ ol, ul, menu {
   
 .cs3-flex-center {
     justify-content: center;
-    align-items: center;
+    align-items: end;
 }
   
 .cs3-height-4xl {
