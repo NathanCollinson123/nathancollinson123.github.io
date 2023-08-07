@@ -23,9 +23,9 @@ const projectSearch = {
     },
 };
 
-function initProjectController() {
-    bindEvents();
-}
+//function initProjectController() {
+//    bindEvents();
+//}
   
 
 function loadProjects() {
@@ -47,7 +47,7 @@ function loadProjects() {
 }
   
 
-function bindEvents() {
+/*function bindEvents() {
     // Remove existing event listeners
     document.querySelector("#nightCalc").removeEventListener("click", handleProjectClick);
     document.querySelector("#chapsChallenge").removeEventListener("click", handleProjectClick);
@@ -55,7 +55,7 @@ function bindEvents() {
     // Bind updated event listeners
     document.querySelector("#nightCalc").addEventListener("click", handleProjectClick);
     document.querySelector("#chapsChallenge").addEventListener("click", handleProjectClick);
-}
+}*/
 
 function generateProjectCarousel(){
     const projectCarousel = document.getElementById("project-carousel");
@@ -78,6 +78,7 @@ function generateProjectCarousel(){
         // attach listener to each project
         projectObject.addEventListener("click", handleProjectClick);
     });
+    //for(var i = 0; i < 5; i++){
     var projectObject;
     projectObject = document.createElement("li");
     projectObject.classList.add("carousel__item");
@@ -87,6 +88,7 @@ function generateProjectCarousel(){
     projectCard.id = "filler";
     projectObject.appendChild(projectCard);
     projectCarousel.appendChild(projectObject);
+    //}
 }
 
 function handleProjectClick(event) {
@@ -101,7 +103,7 @@ function handleProjectClick(event) {
     document.getElementById("projectName").innerText = project.title;
     document.getElementById("projectDescription").innerText = project.desc;
 }
-
+/*
 // Wrap your event listener code in a function
 function setupCarouselUpdatedEvent() {
     var carousel = document.querySelector('.js-carousel');
@@ -116,4 +118,4 @@ function setupCarouselUpdatedEvent() {
 document.addEventListener('DOMContentLoaded', function() {
     setupCarouselUpdatedEvent();
     
-});
+});*/

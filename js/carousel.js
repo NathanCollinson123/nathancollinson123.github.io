@@ -231,6 +231,23 @@
                   carousel.showPrev();
               }
           });
+      
+      window.addEventListener('load', function(event){
+        pauseAutoplay(carousel);
+        clearTimeout(carousel.resizeId);
+        carousel.resizeId = setTimeout(function(){
+          resetCarouselResize(carousel);
+          // reset dots navigation
+          resetDotsNavigation(carousel);
+          resetCarouselControls(carousel);
+          setCounterItem(carousel);
+          startAutoplay(carousel);
+          centerItems(carousel); // center items if carousel.items.length < visibItemsNb
+          alignControls(carousel);
+          // emit custom event - items visible
+          emitCarouselActiveItemsEvent(carousel)
+        }, 250)
+      });
     };
   
     function showPrevItems(carousel) {

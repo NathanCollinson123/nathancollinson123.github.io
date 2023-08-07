@@ -421,7 +421,7 @@ ol, ul, menu {
 /* component */
 :root {
     --carousel-grid-gap: 1.2em;
-    --carousel-item-auto-size: 300px;
+    --carousel-item-auto-size: 20em;
     --carousel-transition-duration: 0.5s;
 }
   
