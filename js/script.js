@@ -5,7 +5,7 @@
 window.addEventListener("load",init);
 function init(){
     loadProjects();
-    //initProjectController();
+    initProjectController();
 }
 
 
@@ -23,9 +23,9 @@ const projectSearch = {
     },
 };
 
-//function initProjectController() {
-//    bindEvents();
-//}
+function initProjectController() {
+    bindEvents();
+}
   
 
 function loadProjects() {
@@ -37,17 +37,52 @@ function loadProjects() {
     );
     projectSearch.projects.push(
       new Project("Chaps Challenge", "chapsChallenge", "Chaps Challenge was group project developed in java. My role in this project was to code the"+
-      "logic and main structure of the code. I had to work with the other members closely to "+
+      " logic and main structure of the code. I had to work with the other members closely to "+
       "communicate the structure of the code that where I used existing java patterns. I was quite "+
       "proud with the game created and learnt a lot from managing roles within a group.", ["img/chaps-challenge"])
     );
-  
-    //initProjectController(); // Call the function to initialize event listeners
-    generateProjectCarousel();
+
+    projectSearch.projects.push(
+        new Project("Chaps Challenge", "chapsChallenge", "Chaps Challenge was group project developed in java. My role in this project was to code the"+
+        "logic and main structure of the code. I had to work with the other members closely to "+
+        "communicate the structure of the code that where I used existing java patterns. I was quite "+
+        "proud with the game created and learnt a lot from managing roles within a group.", ["img/chaps-challenge"])
+    );
+      
+    projectSearch.projects.push(
+        new Project("Chaps Challenge", "chapsChallenge", "Chaps Challenge was group project developed in java. My role in this project was to code the"+
+        "logic and main structure of the code. I had to work with the other members closely to "+
+        "communicate the structure of the code that where I used existing java patterns. I was quite "+
+        "proud with the game created and learnt a lot from managing roles within a group.", ["img/chaps-challenge"])
+    );
+        
+
+    projectSearch.projects.push(
+        new Project("Chaps Challenge", "chapsChallenge", "Chaps Challenge was group project developed in java. My role in this project was to code the"+
+        "logic and main structure of the code. I had to work with the other members closely to "+
+        "communicate the structure of the code that where I used existing java patterns. I was quite "+
+        "proud with the game created and learnt a lot from managing roles within a group.", ["img/chaps-challenge"])
+    );
+
+    projectSearch.projects.push(
+        new Project("Chaps Challenge", "chapsChallenge", "Chaps Challenge was group project developed in java. My role in this project was to code the"+
+        "logic and main structure of the code. I had to work with the other members closely to "+
+        "communicate the structure of the code that where I used existing java patterns. I was quite "+
+        "proud with the game created and learnt a lot from managing roles within a group.", ["img/chaps-challenge"])
+    );
+
+    projectSearch.projects.push(
+        new Project("Chaps Challenge", "chapsChallenge", "Chaps Challenge was group project developed in java. My role in this project was to code the"+
+        "logic and main structure of the code. I had to work with the other members closely to "+
+        "communicate the structure of the code that where I used existing java patterns. I was quite "+
+        "proud with the game created and learnt a lot from managing roles within a group.", ["img/chaps-challenge"])
+    );
+    initProjectController(); // Call the function to initialize event listeners
+    //generateProjectCarousel();
 }
   
 
-/*function bindEvents() {
+function bindEvents() {
     // Remove existing event listeners
     document.querySelector("#nightCalc").removeEventListener("click", handleProjectClick);
     document.querySelector("#chapsChallenge").removeEventListener("click", handleProjectClick);
@@ -55,8 +90,9 @@ function loadProjects() {
     // Bind updated event listeners
     document.querySelector("#nightCalc").addEventListener("click", handleProjectClick);
     document.querySelector("#chapsChallenge").addEventListener("click", handleProjectClick);
-}*/
+}
 
+/*
 function generateProjectCarousel(){
     const projectCarousel = document.getElementById("project-carousel");
 
@@ -89,7 +125,7 @@ function generateProjectCarousel(){
     projectObject.appendChild(projectCard);
     projectCarousel.appendChild(projectObject);
     //}
-}
+}*/
 
 function handleProjectClick(event) {
     var projectKey = event.target.id;
