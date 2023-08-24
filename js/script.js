@@ -134,16 +134,18 @@ function generateProjectCarousel(){
 }*/
 
 function handleProjectClick(event) {
+    var target = event.target;
     if(event.target.classList.contains("projectTitle")){
-        return;
+        target = event.target.parentElement;
     }
-    var projectKey = event.target.id;
+    
+    var projectKey = target.id;
     var project = projectSearch.searchProject(projectKey)[0];
     console.log("project " + project);
     console.log("project key " + projectKey);
     projectSearch.projects.forEach(p => {p.unSelect();});
     document.querySelectorAll(".selected").forEach(item => {item.classList.remove("selected");});
-    event.target.classList.add("selected");
+    target.classList.add("selected");
     document.getElementById("projectName").innerText = project.title;
     document.getElementById("projectDescription").innerText = project.desc;
 }
