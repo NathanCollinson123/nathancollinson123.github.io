@@ -314,6 +314,7 @@ Usage: codyhouse.co/license
 
 .carousel__item .selected {
     transform: scale(1.04);
+    border: gold 2px solid;
 }
 
 .carousel__item .card {
@@ -327,6 +328,11 @@ Usage: codyhouse.co/license
 
 #nightCalc {
     background-image: url("imgs/night-calc/1.png");
+    background-size: cover;
+}
+
+#chapsChallenge {
+    background-image: url("imgs/chaps-challenge/ice.png");
     background-size: cover;
 }
 

@@ -38,22 +38,22 @@ function loadProjects() {
     projectSearch.projects.push(
       new Project("Chaps Challenge", "chapsChallenge", "Chaps Challenge was group project developed in java. My role in this project was to code the"+
       " logic and main structure of the code. I had to work with the other members closely to "+
-      "communicate the structure of the code that where I used existing java patterns. I was quite "+
+      "communicate the structure of the code where I used existing java patterns. I was quite "+
       "proud with the game created and learnt a lot from managing roles within a group.", ["img/chaps-challenge"])
     );
 
     projectSearch.projects.push(
-        new Project("Chaps Challenge", "chapsChallenge", "Chaps Challenge was group project developed in java. My role in this project was to code the"+
-        "logic and main structure of the code. I had to work with the other members closely to "+
-        "communicate the structure of the code that where I used existing java patterns. I was quite "+
-        "proud with the game created and learnt a lot from managing roles within a group.", ["img/chaps-challenge"])
+        new Project("Neural Network", "neuralNetwork", "This program was a neural network that would classify instances using Python. I created this "+
+        "program without the use of external libraries like sklearn. You can train the neural network "+
+        "with csv data file and with another for the testing set. I enjoyed constructing the neural "+
+        "network myself and the similarities to brain neurons.", ["img/neural-network"])
     );
       
     projectSearch.projects.push(
-        new Project("Chaps Challenge", "chapsChallenge", "Chaps Challenge was group project developed in java. My role in this project was to code the"+
-        "logic and main structure of the code. I had to work with the other members closely to "+
-        "communicate the structure of the code that where I used existing java patterns. I was quite "+
-        "proud with the game created and learnt a lot from managing roles within a group.", ["img/chaps-challenge"])
+        new Project("Colour Switcher", "colourSwitcher", "Colour Switcher was a Processing game I made for my Computer Graphics Course. "+
+        "I largely based it off previous games I had played such as Colour Switch and Undertale. This was the first Processing game I had made, "+
+        "which is a language that acts similarily to Java. I had to plan my game so that it would fit a theme and "+
+        "consist of different game modes. On my GitHub you can download the processing game.", ["img/chaps-challenge"])
     );
         
 
@@ -84,12 +84,18 @@ function loadProjects() {
 
 function bindEvents() {
     // Remove existing event listeners
-    document.querySelector("#nightCalc").removeEventListener("click", handleProjectClick);
-    document.querySelector("#chapsChallenge").removeEventListener("click", handleProjectClick);
+    //document.querySelector("#nightCalc").removeEventListener("click", handleProjectClick);
+    //document.querySelector("#chapsChallenge").removeEventListener("click", handleProjectClick);
   
     // Bind updated event listeners
     document.querySelector("#nightCalc").addEventListener("click", handleProjectClick);
+    //document.querySelector(".card").forEach(item => {item.addEventListener("click", handleProjectClick);})
     document.querySelector("#chapsChallenge").addEventListener("click", handleProjectClick);
+    document.querySelector("#neuralNetwork").addEventListener("click", handleProjectClick);
+    document.querySelector("#colourSwitcher").addEventListener("click", handleProjectClick);
+    document.querySelector("#realmRender").addEventListener("click", handleProjectClick);
+    document.querySelector("#website").addEventListener("click", handleProjectClick);
+    document.querySelector("#dataRecorder").addEventListener("click", handleProjectClick);
 }
 
 /*
@@ -128,6 +134,9 @@ function generateProjectCarousel(){
 }*/
 
 function handleProjectClick(event) {
+    if(event.target.classList.contains("projectTitle")){
+        return;
+    }
     var projectKey = event.target.id;
     var project = projectSearch.searchProject(projectKey)[0];
     console.log("project " + project);
@@ -135,7 +144,6 @@ function handleProjectClick(event) {
     projectSearch.projects.forEach(p => {p.unSelect();});
     document.querySelectorAll(".selected").forEach(item => {item.classList.remove("selected");});
     event.target.classList.add("selected");
-    console.log("ya"+ event.target);
     document.getElementById("projectName").innerText = project.title;
     document.getElementById("projectDescription").innerText = project.desc;
 }
