@@ -160,6 +160,8 @@ body {
     width: 35px;
 }
 
+/* Project CSS */
+
 .project{
     padding-top: 200px;
 }
@@ -169,6 +171,17 @@ body {
     padding-left: 20px;
     margin: auto;
     color: #292929;
+}
+
+.project p {
+    padding: 0 5vw;
+    max-width: 800px;
+}
+
+.project h3 {
+    font-size: 5em;
+    padding: 0 2vw;
+    margin-bottom: 5%;
 }
 
 /* CONTACTS PAGE */
@@ -298,6 +311,7 @@ body {
         height: 70px;
         top:0;
     }
+
 }
 
 
