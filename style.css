@@ -336,6 +336,31 @@ Usage: codyhouse.co/license
     background-size: cover;
 }
 
+#dataRecorder{
+    background-image: url("imgs/data-recorder/front-page.png");
+    background-size: cover;
+}
+
+#neuralNetwork{
+    background-image: url("imgs/neural-network/graphs.png");
+    background-size: cover;
+}
+
+#website{
+    background-image: url("imgs/personal-portfolio/design.png");
+    background-size: cover;
+}
+
+#realmRender{
+    background-image: url("imgs/realm-render/front-page.png");
+    background-size: cover;
+}
+
+#colourSwitcher{
+    background-image: url("imgs/colour-switcher/insane.png");
+    background-size: cover;
+}
+
 .carousel__wrapper #side-fade-left {
     position: absolute;
     left: 0;
